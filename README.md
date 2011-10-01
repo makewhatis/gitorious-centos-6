@@ -2,7 +2,7 @@
 
 For installing Gitorious in latest Centos 6 x86_64 stable using Opscode Chef for a completely automated process, follow these instructions:
 
-    wget -O /root/chef-solo-prep.sh https://raw.github.com/gist/2d3e996ae10129596afa/235fbeb1cbb1713534bebaecbb2f56e75c8e8bac/gitorious-cent6-prep.sh 
+    wget -O /root/chef-solo-prep.sh https://raw.github.com/gist/2d3e996ae10129596afa/68acab43c020627a996d8722bd92ea5c2d7eadb5/gitorious-cent6-prep.sh 
     bash /root/chef-solo-prep.sh
 First review the settings under /root/chef-solo/node.json. Change all settings that you would like to customize, notification email, host, etc.
 
