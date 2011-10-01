@@ -14,6 +14,15 @@ First review the settings under /root/chef-solo/node.json. Change all settings t
 If you have any problems, please fill the issue [here](https://github.com/makewhatis/gitorious-centos-6/issues).
 
 
+
+# TODO: 
+
+- Currently need to setup the SMTP recipe, currently this doesnt configure that part.
+- Need to fix ntpdate.
+
+
+# Extra Stuff
+
 Contents of chef-solo-prep.sh (just in case that script is unavailable for some odd reason):
 
     yum -y update
@@ -33,8 +42,3 @@ Contents of chef-solo-prep.sh (just in case that script is unavailable for some 
     Please review the settings in /root/chef-solo/node.json.\n
     You will have to change these in order to customize the install of this instance."
 
-
-TODO: 
-
-- Currently need to setup the SMTP recipe, currently this doesnt configure that part.
-- Need to fix ntpdate.
