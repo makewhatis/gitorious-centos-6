@@ -2,7 +2,7 @@
   "packages": { "dist_only": true },
   "passenger": { "version": "3.0.7" },
   "gitorious": {
-    "host": "git.fhlabs.com",
+    "host": "git.localhost",
     "git": {
       "url": "git://gitorious.org/gitorious/mainline.git",
       "reference": "v2.0.2"
@@ -15,12 +15,12 @@
     },  
     "hide_http_clone_urls": "false",
     "locale": "en",
-    "support_email": "admin@fhlabs.com",
-    "notification_emails": "admin@fhlabs.com",
+    "support_email": "admin@localhost,
+    "notification_emails": "admin@localhost",
     "public_mode": "false",
     "only_admins_create": "false",
     "admin": {
-      "email": "admin@fhlabs.com",
+      "email": "admin@localhost",
       "password": "password123"
     }
   },
