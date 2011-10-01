@@ -2,6 +2,8 @@
 
 For installing Gitorious in latest Centos 6 x86_64 stable using Opscode Chef.  For a completely automated process, follow these instructions:
 
+This is a modified version of https://github.com/rosenfeld/gitorious-cookbooks that was originally made for Ubuntu 10.10
+
     wget -O /root/chef-solo-prep.sh https://raw.github.com/gist/2d3e996ae10129596afa/68acab43c020627a996d8722bd92ea5c2d7eadb5/gitorious-cent6-prep.sh 
     bash /root/chef-solo-prep.sh
 
