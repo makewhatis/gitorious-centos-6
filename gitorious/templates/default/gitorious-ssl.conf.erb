@@ -1,0 +1,10 @@
+<IfModule mod_ssl.c>
+  <VirtualHost _default_:443>
+    DocumentRoot <%= node[:gitorious][:deploy_path] %>/public
+    SSLEngine on
+    SSLCertificateFile /etc/pki/tls/certs/localhost.crt
+    SSLCertificateKeyFile /etc/pki/tls/private/localhost.key
+    BrowserMatch ".*MSIE.*" nokeepalive ssl-unclean-shutdown downgrade-1.0 force-response-1.0
+  </VirtualHost>
+</IfModule>
+

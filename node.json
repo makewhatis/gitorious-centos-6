@@ -1,0 +1,32 @@
+{
+  "packages": { "dist_only": true },
+  "passenger": { "version": "3.0.7" },
+  "gitorious": {
+    "host": "git.fhlabs.com",
+    "git": {
+      "url": "git://gitorious.org/gitorious/mainline.git",
+      "reference": "v2.0.2"
+    },  
+    "db": {
+      "user": "root",
+      "host": "localhost",
+      "database": "gitorious",
+      "password": "password123"
+    },  
+    "hide_http_clone_urls": "false",
+    "locale": "en",
+    "support_email": "admin@fhlabs.com",
+    "notification_emails": "admin@fhlabs.com",
+    "public_mode": "false",
+    "only_admins_create": "false",
+    "admin": {
+      "email": "admin@fhlabs.com",
+      "password": "password123"
+    }
+  },
+  "mysql": { 
+	"server_root_password":  "password123", 
+	"bind_address": "127.0.0.1"
+   }, 
+  "run_list": [ "recipe[vim]", "recipe[mysql::server]", "recipe[custom_environment]", "recipe[gitorious]" ]
+}
