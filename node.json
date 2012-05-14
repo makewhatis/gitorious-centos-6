@@ -15,7 +15,7 @@
     },  
     "hide_http_clone_urls": "false",
     "locale": "en",
-    "support_email": "admin@localhost,
+    "support_email": "admin@localhost",
     "notification_emails": "admin@localhost",
     "public_mode": "false",
     "only_admins_create": "false",
