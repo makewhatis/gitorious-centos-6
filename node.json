@@ -28,5 +28,5 @@
 	"server_root_password":  "password123", 
 	"bind_address": "127.0.0.1"
    }, 
-  "run_list": [ "recipe[vim]", "recipe[mysql::server]", "recipe[custom_environment]", "recipe[gitorious]", "recipe[yum::epel]" ]
+  "run_list": [ "recipe[yum::epel]", "recipe[vim]", "recipe[mysql::server]", "recipe[custom_environment]", "recipe[gitorious]" ]
 }
