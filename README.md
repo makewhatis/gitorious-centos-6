@@ -29,7 +29,7 @@ Contents of chef-solo-prep.sh (just in case that script is unavailable for some 
 
     yum -y update
     mkdir /etc/chef /root/chef-solo
-    wget -O /etc/chef/solo.rb https://gist.github.com/raw/847256/chef-gitorious-etc-solo.rb
+    wget -O /etc/chef/solo.rb https://gist.github.com/raw/847256/00429fd14daf0040bc7ea0cdf9ffd0fb06e8434e/chef-gitorious-etc-solo.rb
     echo "gem: --no-rdoc --no-ri" > /etc/gemrc
     yum install -y ruby ruby-devel libruby gcc-c++ make ssl-cert git
     cd /tmp
