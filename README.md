@@ -4,7 +4,7 @@ For installing Gitorious in latest Centos 6 x86_64 stable using Opscode Chef.  F
 
 This is a modified version of https://github.com/rosenfeld/gitorious-cookbooks that was originally made for Ubuntu 10.10
 
-    wget -O /root/chef-solo-prep.sh https://gist.github.com/raw/2d3e996ae10129596afa/68acab43c020627a996d8722bd92ea5c2d7eadb5/gitorious-cent6-prep.sh 
+    wget -O /root/chef-solo-prep.sh https://gist.github.com/makewhatis/2d3e996ae10129596afa/raw/03e0ca492f66131e986539d46407382aea89d138/gitorious-cent6-prep.sh 
     bash /root/chef-solo-prep.sh
 
 First review the settings under /root/chef-solo/node.json. Change all settings that you would like to customize, notification email, host, etc. Then procede with running chef-solo from the /root/chef-solo directory:
@@ -29,14 +29,14 @@ Contents of chef-solo-prep.sh (just in case that script is unavailable for some 
 
     yum -y update
     mkdir /etc/chef /root/chef-solo
-    wget -O /etc/chef/solo.rb https://gist.github.com/raw/847256/00429fd14daf0040bc7ea0cdf9ffd0fb06e8434e/chef-gitorious-etc-solo.rb
+    wget -O /etc/chef/solo.rb https://gist.github.com/raw/847256/chef-gitorious-etc-solo.rb
     echo "gem: --no-rdoc --no-ri" > /etc/gemrc
     yum install -y ruby ruby-devel libruby gcc-c++ make ssl-cert git
     cd /tmp
     wget http://production.cf.rubygems.org/rubygems/rubygems-1.4.2.tgz
     tar zxf rubygems-1.4.2.tgz
     ruby rubygems-1.4.2/setup.rb --no-format-executable
-    gem install chef
+    gem install chef --version '< 11'
     cd /root/chef-solo
     git clone git://github.com/makewhatis/gitorious-centos-6.git cookbooks
     cp /root/chef-solo/cookbooks/node.json /root/chef-solo/
